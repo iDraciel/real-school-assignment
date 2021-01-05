@@ -319,33 +319,53 @@
 </div>
 </footer>
 <script>
-if (screen && screen.width <= 600) {
-document.write('<script type="text/javascript" src="Goals.js"><\/script>');
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  var badgeIndex = 0;
+  showBadge();
+  function showBadge() {
+    var i;
+    var badge__slides = document.getElementsByClassName("myBadges");
+    var badge__dots = document.getElementsByClassName("badge__dot");
+      for (i = 0; i < badge__slides.length; i++) {
+        badge__slides[i].style.display = "none";
+      }
+      badgeIndex++;
+      if (badgeIndex > badge__slides.length) {badgeIndex = 1}
+      for (i = 0; i < badge__dots.length; i++) {
+        badge__dots[i].className = badge__dots[i].className.replace(" active", "");
+      }
+      badge__slides[badgeIndex-1].style.display = "block";
+      badge__dots[badgeIndex-1].className += " active";
+      setTimeout(showBadge, 2000);
+    }
 }
 </script>
     <script ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script>
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        var skill__slideIndex = 0;
 
-var skill__slideIndex = 0;
-showSlides();
-function showSlides() {
-  var j;
-  var skills__slides = document.getElementsByClassName("mySlides");
-  var skill__dots = document.getElementsByClassName("dot");
-    for (j = 0; j < skills__slides.length; j++) {
-      skills__slides[j].style.display = "none";
-    }
-    skill__slideIndex++;
-    if (skill__slideIndex > skills__slides.length) {skill__slideIndex = 1}
-    for (j = 0; j < skill__dots.length; j++) {
-      skill__dots[j].className = skill__dots[j].className.replace(" active", "");
-    }
-    skills__slides[skill__slideIndex-1].style.display = "block";
-    skill__dots[skill__slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+        function showSlides() {
+          var j;
+          var skills__slides = document.getElementsByClassName("mySlides");
+          var skill__dots = document.getElementsByClassName("dot");
+            for (j = 0; j < skills__slides.length; j++) {
+              skills__slides[j].style.display = "none";
+            }
+            skill__slideIndex++;
+            if (skill__slideIndex > skills__slides.length) {skill__slideIndex = 1}
+            for (j = 0; j < skill__dots.length; j++) {
+              skill__dots[j].className = skill__dots[j].className.replace(" active", "");
+            }
+            skills__slides[skill__slideIndex-1].style.display = "block";
+            skill__dots[skill__slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
 
 
+        }
+    showSlides();
 }
+
 </script>
 <script src="cardSlider.js"></script>
     <script src="cards.js"></script>
