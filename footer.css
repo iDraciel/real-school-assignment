@@ -1,0 +1,132 @@
+footer {
+  display: -webkit-flex;
+  display:-moz-flex;
+  display:-ms-flex;
+  display:-o-flex;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  color:#fff;
+  background-color: grey;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button3 {background-color: #f44336;}
+
+.footer > * {
+  flex: 1 100%;
+}
+.footer-left {
+  margin-top: 2.2em;
+  margin-left: 1.2em;
+margin-bottom: 2em;
+}
+#ufaber {
+  margin-top: -1em;
+  padding-bottom:15px;
+  color:white;
+}
+
+.fa-phone-square-alt{
+  margin-top:0;
+  margin-bottom: 2em;
+}
+.name {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 35px;
+}
+.address {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding:2px;
+}
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer  li {
+  line-height: 2em;
+}
+.footer a {
+  text-decoration: none;
+}
+
+.footer-right {
+  display: -webkit-flex;
+  display:-moz-flex;
+  display:-ms-flex;
+  display:-o-flex;
+  display: flex;
+  flex-flow:  row wrap;
+}
+.footer-right > * {
+  flex: 1 50%;
+  margin-left: 1.2em;
+}
+.box a {
+  color:#999;
+}
+.footer-bottom {
+  text-align: center;
+  color:#999;
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.footer-left p {
+  padding-right: 20%;
+  color:#999;
+}
+#adress__text {
+width:10%;
+}
+.contact {
+  float: left;
+  display: grid;
+  padding: 20px;
+}
+.socials a {
+  margin-top: 1.4em;
+  width:40px;
+  height:40px;
+  display: inline-block;
+  margin-left: 10px;
+}
+.socials a i{
+  color:#e7f2f4;
+  padding:10px 12px;
+  font-size: 20px;
+}
+.stores {
+  margin-top: 2em;
+  display: flex;
+  justify-content:space-around;
+}
+@media screen and (min-width:600px) {
+  .footer-right > * {
+    flex: 1;
+  }
+  .footer-left{
+    flex:1 0px;
+  }
+  .footer-right {
+    flex:2 0px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .footer {
+    padding:15px;
+  }
+}

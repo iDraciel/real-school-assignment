@@ -1,0 +1,479 @@
+
+
+body {
+    box-sizing: border-box;
+      overflow-x: hidden;
+}
+
+.profile {
+  border:2px solid black;
+  border-radius: 25px;
+  background: white;
+  margin: 10px;
+  padding:2px 20px;
+}
+#profile__currency{
+  font-weight: bold;
+  margin-top: -15%;
+}
+#section {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.header__one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h1 {
+  font-family: sans-serif;
+}
+h2 {
+  font-family: sans-serif;
+  margin-top: -2px;
+}
+.button__thumbs {
+  border:2px solid black;
+  border-radius: 25px;
+  background: white;
+  margin: 10px;
+}
+.far {
+  font-size: 18px;
+position: relative;
+left:20%;
+padding: 0;
+margin: 0;
+}
+.booking__content {
+  display: flex;
+  justify-content: space-around;
+}
+.image__left {
+  position: relative;
+ text-align: center;
+ color: white;
+  width:50%;
+  height: auto;
+}
+.top-right {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  color:white;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.bottom-left {
+  position: absolute;
+  bottom:38px;
+  left: 16px;
+  color:white;
+  font-family: sans-serif;
+  font-weight: 700;
+  border:1px solid white;
+  padding:4px 10px;
+}
+
+.booking {
+  margin-top: -35px;
+  padding:20px 30px;
+  width:calc(50% - 40px);
+}
+#device {
+  margin-top: -24px;
+  float: right;
+}
+.devices {
+  float: right;
+  display: flex;
+  margin-top: -30px;
+  margin-right: -10px;
+}
+.or {
+  margin-left: 8px;
+}
+.button__booking {
+  border: none;
+color: black;
+font-family: sans-serif;
+padding: 10px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin-right: 7px;
+margin-top:8px;
+cursor: pointer;
+border-radius:25px;
+}
+@media screen and (max-width:1175px) and (min-width:1024px) {
+
+  .button__booking {
+    padding:5px 15px;
+  }
+}
+@media screen and (min-width:320px) and (max-width:600px) {
+  .button__booking{
+    padding:3px 10px;
+  }
+}
+
+.seats {
+  display: flex;
+}
+#seat__left{
+  margin-right:35%;
+}
+.recommended {
+  font-size: 12px;
+  font-weight: 700;
+  position: relative;
+  top:15px;
+  left:-20%;
+  margin: 0;
+  padding: 0;
+}
+.fees {
+  margin-top:15px;
+  display: flex;
+}
+.rupees {
+  padding:10px 20px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-right:10px;
+}
+
+#inr{
+text-decoration: line-through;
+}
+.points {
+  margin-top: 14px;
+  color:red;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: sans-serif;
+}
+#book__class{
+  margin-top:15px;
+  display: flex;
+}
+.bookClass {
+  width:70%;
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.share {
+  padding:2px 10px;
+  margin-left:7px;
+  background-color: #fff;
+  border:1px solid red;
+  border-radius: 5px;
+  color:red;
+}
+.goals__header {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color:white;
+  background-color:#339cff;
+  padding:5px 18px;
+  border: none;
+  border-radius: 37%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 6px;
+}
+
+.radialProgressBar {
+  border-radius: 50%;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ddd;
+  margin: 20px;
+}
+.radialProgressBar .overlay {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  background: #fff;
+  text-align: center;
+  padding-top: 30%;
+}
+.progress-10 {
+  background-image: -webkit-linear-gradient(36deg, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, #028cd5 50%, #ddd 50%);
+  background-image: linear-gradient(54deg, #ddd 50%, transparent 50%), linear-gradient(90deg, #028cd5 50%, #ddd 50%);
+}
+
+.skills__header {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color:white;
+  background-color:#4B0082;
+  padding:5px 18px;
+  border: none;
+  border-radius: 37%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 6px;
+}
+.skills {
+  align-items: center;
+display: flex;
+}
+
+.mySlides {
+  text-align: center;
+}
+.skills__button {
+  border: 1px solid #C0C0C0;
+  background-color: white;
+  color:black;
+  padding: 5px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius:25px;
+}
+.circle__dot {
+  margin-left: -37px;
+  height: 30px;
+  width: 30px;
+  background-color: yellow;
+  border-radius: 50%;
+  display: inline-block;
+    margin-right: 4px;
+
+}
+.circle__dot p {
+  text-align: center;
+  color: brown;
+  margin-top: 9px;
+  font-size: 10px;
+  font-weight: bold;
+margin-right: 0;
+padding-right: 0;
+}
+
+.line__green {
+width:60px;
+height:15px;
+border-radius:25px;
+background-color:#7CFC00;
+border:none;
+font-size: 20px;
+}
+.content__headers {
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+.text__content{
+  font-family: monospace;
+  font-size: 15px;
+  font-weight: 500;
+}
+.card__containers {
+  display: flex;
+   flex-wrap: wrap;
+   margin: 10px;
+}
+
+.card {
+  box-shadow: 0 0 1px black;
+width: 30%;
+height:28%;
+  cursor: pointer;
+  background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 20px;
+    transition: 0.3s;
+    margin-right: 25px;
+}
+.card__image {
+  width:100%;
+  height:auto;
+  border-radius: 20px 20px 0 0;
+}
+.card__text{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card__header{
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.card__header_two{
+  margin-top: -15px;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+  margin-left: 5px;
+}
+.fas {
+  margin-top: -12px;
+  margin-right: 8px;
+}
+
+@media screen and (max-width:600px){
+  .trip{
+    font-size: 15px;
+  }
+  .museum{
+    font-size: 13px;
+  }
+  .header__two{
+    margin-top: -7px;
+    font-size: 18px;
+  }
+
+  .devices {
+    margin-top: 10px;
+  }
+  .booking{
+    padding:0px;
+  }
+  .button__booking {
+    padding:4px 20px;
+    font-size: 10px;
+  }
+  .seats {
+    font-size: 10px;
+  }
+  #seat__left{
+    margin-right: 45%;
+  }
+  .bookClass{
+    padding:8px 14px;
+    font-size: 13px;
+  }
+  #section {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .booking__content{
+    display:grid;
+    margin: 5px;
+  }
+  .image__left {
+    width:100%;
+  }
+  .booking{
+    width:100%;
+  }
+  .button__thumbs{
+    display: none;
+  }
+  .recommended {
+    display: none;
+  }
+  .skills__header__div{
+    margin-left: 25px;
+  }
+  .skills {
+    display:block;
+  }
+  .mySlides {
+    text-align: center;
+  }
+  .dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+   }
+   .active {
+  background-color: #717171;
+}
+.content__headers{
+  font-size: 18px;
+}
+.text__content {
+  font-size: 12px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.card__containers {
+  display: block;
+}
+.card{
+  width:85%;
+}
+.card_dot {
+height: 15px;
+width: 15px;
+margin: 5px 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+ }
+ .active {
+background-color: #717171;
+}
+
+}
+@media screen and (max-width:1273px) and (min-width:1024px) {
+  #text__fees {
+    margin-top: -15px;
+  }
+  #slot {
+    margin-top: -10px;
+    margin-bottom: -5px;
+  }
+  .rupees {
+    padding:2px 8px;
+  }
+  .bookClass{
+    padding:5 10px;
+  }
+}
+
+@media screen and (max-width:1255px) and (min-width:1178px){
+  .bottom-left {
+    bottom:15%;
+  }
+}
+
+@media screen and (max-width:1177px) and (min-width:1133px){
+  .bottom-left {
+    bottom:27%;
+  }
+}
+@media screen and (max-width:1132px) and (min-width:1080px){
+  .bottom-left {
+    bottom:32%;
+  }
+}
+@media screen and (max-width:1080px) and (min-width:990px){
+.bottom-left {
+  bottom:38%;
+}
+}

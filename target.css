@@ -1,0 +1,144 @@
+.content__Goal__badge{
+  display: flex;
+}
+.badges__header {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 400;
+  color:white;
+  background-color:green;
+  padding:5px 18px;
+  border: none;
+  border-radius: 37%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 6px;
+}
+.button__slides{
+  text-align: center;
+  margin-right: 8px;
+}
+.mySlides {
+  text-align: center;
+  margin-right: 8px;
+}
+.myBadges {
+  text-align: center;
+  margin-right: 8px;
+}
+
+.explorer__button {
+  border: 1px solid #C0C0C0;
+  background-color: white;
+  color:black;
+  padding: 14px 35px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius:25px;
+}
+.skills__badges{
+  display: flex;
+}
+.badges__button__thinking{
+  border: 1px solid #C0C0C0;
+  background-color: white;
+  color:black;
+  padding: 10px 45px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius:25px;
+}
+.badges__button {
+  border: 1px solid #C0C0C0;
+  background-color: white;
+  color:black;
+  padding: 10px 45px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.skills__button {
+  border: 1px solid #C0C0C0;
+  background-color: white;
+  color:black;
+  padding: 10px 45px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 13px;
+  font-family: sans-serif;
+  display: inline-block;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius:25px;
+}
+.progress{
+  position: relative;
+  margin-left: -24px;
+  float:left;
+  text-align: center;
+}
+.barOverflow{ /* Wraps the rotating .bar */
+  position: relative;
+  overflow: hidden; /* Comment this line to understand the trick */
+  margin-top: -6px;
+  width: 40px; height: 20px; /* Half circle (overflow) */
+margin-bottom: -10px;
+margin-right: 9px;
+
+ /* bring the numbers up */
+}
+.bar{
+  position: absolute;
+  top: 0; left: 0;
+  width: 40px; height: 40px; /* full circle! */
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 3px solid #595959;     /* half gray, */
+  border-bottom-color: #0bf;  /* half azure */
+  border-right-color: #0bf;
+}
+
+
+@media screen and (max-width:600px){
+  .content__Goal__badge{
+    display: grid;
+  }
+  .skills__badges {
+    display:block;
+  }
+  .myBadges {
+    text-align: center;
+  }
+  .badge__dot {
+  height: 15px;
+  width: 15px;
+  margin: 5px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+   }
+   .active {
+  background-color: #717171;
+  }
+}
