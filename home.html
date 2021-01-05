@@ -318,16 +318,20 @@
   <p>&copy; 2019 uFaber.All rights reserved uFaber Edutech </p>
 </div>
 </footer>
-<script src="Goals.js"></script>
+<script>
+if (screen && screen.width <= 600) {
+document.write('<script type="text/javascript" src="Goals.js"><\/script>');
+}
+</script>
     <script ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script>
+
 var skill__slideIndex = 0;
 showSlides();
 function showSlides() {
   var j;
   var skills__slides = document.getElementsByClassName("mySlides");
   var skill__dots = document.getElementsByClassName("dot");
-if(screen.width <= 600){
     for (j = 0; j < skills__slides.length; j++) {
       skills__slides[j].style.display = "none";
     }
@@ -339,7 +343,7 @@ if(screen.width <= 600){
     skills__slides[skill__slideIndex-1].style.display = "block";
     skill__dots[skill__slideIndex-1].className += " active";
     setTimeout(showSlides, 2000); // Change image every 2 seconds
-  }
+
 
 }
 </script>
