@@ -3,21 +3,9 @@ body {
     box-sizing: border-box;
       overflow-x: hidden;
 }
-
-.profile {
-  border:2px solid black;
-  border-radius: 25px;
-  background: white;
-  margin: 10px;
-  padding:2px 20px;
-}
-#profile__currency{
-  font-weight: bold;
-  margin-top: -15%;
-}
 #section {
-  margin-left: 70px;
-  margin-right: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .header__one {
