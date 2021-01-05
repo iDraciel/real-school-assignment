@@ -327,7 +327,7 @@ function showSlides() {
   var j;
   var skills__slides = document.getElementsByClassName("mySlides");
   var skill__dots = document.getElementsByClassName("dot");
-if(window.innerWidth<600){
+if(screen.width <= 600){
     for (j = 0; j < skills__slides.length; j++) {
       skills__slides[j].style.display = "none";
     }
